@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   namespace :admin do
     get 'informations/show'
     get 'informations/edit'
+    get 'informations/new'
+    post 'informations' => 'informations#create'
   end
   namespace :admin do
     get 'facilities/index'
@@ -32,9 +34,9 @@ Rails.application.routes.draw do
     get 'homes/top'
     get 'homes/about'
   end
-  
-  
-  
+
+
+
 devise_for :public,skip: [:registrations, :sessions, :passwords], controllers: {
 }
 
