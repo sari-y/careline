@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get 'informations/edit'
     get 'informations/new'
     post 'informations' => 'informations#create'
+    resources :informations
   end
   namespace :admin do
     get 'facilities/index'
