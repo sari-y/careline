@@ -1,2 +1,18 @@
-<h1>Admin::Facilities#index</h1>
-<p>Find me in app/views/admin/facilities/index.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <h2>施設情報一覧</h2>
+        </div>
+      </div>
+
+      <% @facilities.each do |facility| %>
+        <%= link_to admin_facility_path(facility) do %>
+          <%= facility.name %>
+        <% end %>
+
+      <% end %>
+    </div>
+  </div>
+</div>
