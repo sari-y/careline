@@ -9,8 +9,8 @@ devise_for :admin, skip: [:registrations, :passwords] ,controllers: {
 
   namespace :admin do
     get 'homes/top'
-    resources :informations, only: [:new, :create, :show, :edit]
-    resources :facilities, only: [:new, :index, :show, :edit]
+    resources :informations, only: [:new, :create, :show, :edit, :update, :destroy]
+    resources :facilities, only: [:new, :create, :index, :show, :edit, :update, :destroy]
     resources :contacts, only: [:index, :show]
   end
 
