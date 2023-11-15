@@ -3,16 +3,20 @@
     <div class="col-8 mx-auto">
       <div class="row">
         <div class="col-12 mt-5 mb-5">
-          <h2>会社情報＜詳細＞</h2>
+          <h2>会社情報詳細</h2>
         </div>
       </div>
-
-
+      <div class="col-12 mb-4 d-flex flex-row-reverse">
+        <%= link_to "編集", edit_admin_information_path(@information) %>
+      </div>
+      <div class="col-12 mb-4 d-flex flex-row-reverse">
+        <%= link_to "削除", admin_information_path, method: :delete, "data-confirm" => "本当に削除しますか？"  %>
+      </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <h6>会社名</h6>
+            <div>会社名</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
@@ -23,97 +27,88 @@
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :post_code, "郵便番号" %>
+            <div>郵便番号</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :post_code %>
+          <%= @information.post_code %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :address, "住所" %>
+            <div>住所</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :address %>
+          <%= @information.address %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :establishment_date, "設立日" %>
+            <div>設立日</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :establishment_date %>
+          <%= @information.establishment_date %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :capital, "資本金" %>
+            <div>資本金</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :capital %>
+          <%= @information.capital %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :phone_number, "電話番号" %>
+            <div>電話番号</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :phone_number %>
+          <%= @information.phone_number %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :email, "メールアドレス" %>
+            <div>メールアドレス</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :email %>
+          <%= @information.email %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :business_content, "事業内容" %>
+            <div>事業内容</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :business_content %>
+          <%= @information.business_content %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div class="field">
-            <%= f.label :name, "代表取締役" %>
+            <div>代表取締役</div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :name %>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-8"></div>
-        <div class="col-md-4 mb-5">
-          <div class="actions">
-            <%= f.submit "登録" %>
-          </div>
+          <%= @information.name %>
         </div>
       </div>
     </div>

@@ -37,6 +37,7 @@ class Admin::FacilitiesController < ApplicationController
   def destroy
   end
 
+  private
 
   def facility_params
     params.require(:facility).permit(:name, :post_code, :address, :open, :rent, :utility, :food, :daily, :explanation)
