@@ -9,7 +9,9 @@
       <div class="col-12 mb-4 d-flex flex-row-reverse">
         <%= link_to "編集", edit_admin_facility_path(@facility) %>
       </div>
-
+      <div class="col-12 mb-4 d-flex flex-row-reverse">
+        <%= link_to "削除", admin_facility_path, method: :delete, "data-confirm" => "本当に削除しますか？"  %>
+      </div>
 
       <div class="row">
         <div class="col-md-4">

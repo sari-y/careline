@@ -3,12 +3,11 @@
     <div class="col-8 mx-auto">
       <div class="row">
         <div class="col-12 mt-5 mb-5">
-          <h2>会社情報＜入力＞</h2>
+          <h2>会社情報登録</h2>
         </div>
       </div>
 
 
-    <%#= form_with do |f| %>
     <%= form_with(model: @information, url: admin_informations_path, method: :post) do |f| %>
 
       <div class="row">

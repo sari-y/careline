@@ -8,14 +8,29 @@ class Admin::InformationsController < ApplicationController
     @information = Information.new(information_params)
     @information.save
       flash[:notice] = "会社情報を登録しました。"
-      redirect_to  admin_informations_show_path
+      redirect_to admin_information_path(@information)
   end
 
   def show
     @information = Information.find(params[:id])
+    unless @information
+      flash[:notice] = "施設情報を登録できませんでした。"
+      redirect_to root_path
+    end
   end
 
   def edit
+    @information = Information.find(params[:id])
+  end
+
+  def update
+    @information = Information.find(params[:id])
+    @information.update(information_params)
+      flash[:notice] = "会社情報を更新しました。"
+      redirect_to  admin_information_path(@information)
+  end
+
+  def destroy
   end
 
   private
