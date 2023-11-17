@@ -21,7 +21,7 @@ devise_for :admin, skip: [:registrations, :passwords] ,controllers: {
   get '/about' => 'homes#about'
   resources :informations, only: [:show]
   resources :facilities, only: [:index, :show]
-  resources :contacts, only: [:new, :show]
+  resources :contacts, only: [:new, :create, :show]
 
 end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

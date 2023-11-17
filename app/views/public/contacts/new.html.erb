@@ -1,2 +1,115 @@
-<h1>Public::Contacts#new</h1>
-<p>Find me in app/views/public/contacts/new.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <h2>お問い合わせ</h2>
+        </div>
+      </div>
+
+
+    <%= form_with(model: @contact, url: contacts_path, method: :post) do |f| %>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :group, "法人・個人" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :group %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :name, "お名前" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :name %>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :name_kana, "ふりがな" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :name_kana %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :sex, "性別" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :sex %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :age, "年齢" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :age %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :phone_number, "電話番号" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :phone_number %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :email, "メールアドレス" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :email %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <%= f.label :requirements, "お問い合わせ内容" %>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= f.text_field :requirements %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4 mb-5">
+          <div class="actions">
+            <%= f.submit "送信" %>
+          </div>
+        </div>
+      </div>
+
+
+    <% end %>
+    </div>
+  </div>
+</div>
