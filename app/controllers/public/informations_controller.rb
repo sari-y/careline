@@ -3,6 +3,7 @@ class Public::InformationsController < ApplicationController
   end
 
   def show
+     @information = Information.find(params[:id])
   end
 
 end

@@ -1,2 +1,116 @@
-<h1>Public::Informations#show</h1>
-<p>Find me in app/views/public/informations/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <h2>会社情報詳細</h2>
+        </div>
+      </div>
+      <div class="col-12 mb-4 d-flex flex-row-reverse">
+        <%= link_to "編集", edit_admin_information_path(@information) %>
+      </div>
+      <div class="col-12 mb-4 d-flex flex-row-reverse">
+        <%= link_to "削除", admin_information_path, method: :delete, "data-confirm" => "本当に削除しますか？"  %>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>会社名</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.campany_name %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>郵便番号</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.post_code %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>住所</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.address %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>設立日</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.establishment_date %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>資本金</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.capital %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>電話番号</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.phone_number %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>メールアドレス</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.email %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>事業内容</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.business_content %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>代表取締役</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @information.name %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
