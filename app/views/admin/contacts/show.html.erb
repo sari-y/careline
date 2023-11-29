@@ -1,2 +1,103 @@
-<h1>Admin::Contacts#show</h1>
-<p>Find me in app/views/admin/contacts/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <h2>お問い合わせ内容</h2>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>法人・個人</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.group %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>お名前</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.name %>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>ふりがな</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.name_kana %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>性別</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.sex %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>年齢</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.age %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>電話番号</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.phone_number %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>メールアドレス</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.email %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>お問い合わせ内容</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @contact.requirements %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
