@@ -23,7 +23,11 @@
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :group %>
+          <%= f.radio_button :group, true %>
+          <%= f.label :group, "法人" %>
+          <%= f.radio_button :group, false %>
+          <%= f.label :group, "個人" %>
+          <%#= f.text_field :group %>
         </div>
       </div>
 
@@ -57,7 +61,11 @@
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= f.text_field :sex %>
+          <%= f.radio_button :sex, true %>
+          <%= f.label :sex, "男性" %>
+          <%= f.radio_button :sex, false %>
+          <%= f.label :sex, "女性" %>
+          <%#= f.text_field :sex %>
         </div>
       </div>
 
