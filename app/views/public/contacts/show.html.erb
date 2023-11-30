@@ -16,7 +16,11 @@
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= @contact.group %>
+          <% if @contact.group %>
+            法人
+          <% elsif %>
+            個人
+          <% end %>
         </div>
       </div>
 
@@ -50,7 +54,11 @@
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <%= @contact.sex %>
+          <% if @contact.sex %>
+            男性
+          <% elsif %>
+            女性
+          <% end %>
         </div>
       </div>
 
