@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+.background {
+  background-color: #ffe4b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yajirushi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

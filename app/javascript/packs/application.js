@@ -16,3 +16,6 @@ import "../stylesheets/application";
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+//= require turbolinks
+//= require turbolinks-compatibility
