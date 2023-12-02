@@ -79,15 +79,15 @@ ActiveRecord::Schema.define(version: 2023_11_10_043457) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "information", force: :cascade do |t|
+  create_table "informations", force: :cascade do |t|
     t.string "campany_name"
     t.string "name"
     t.string "phone_number"
     t.string "post_code"
     t.string "address"
     t.string "email"
-    t.date "establishment_date"
-    t.integer "capital"
+    t.string "establishment_date"
+    t.string "capital"
     t.string "business_content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
