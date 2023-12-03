@@ -7,10 +7,10 @@
         </div>
       </div>
       <div class="col-12 mb-4 d-flex flex-row-reverse">
-        <%= link_to "編集", edit_admin_facility_path(@facility) %>
+        <%= link_to "編集", edit_admin_facility_path(@facility), class: "mx-4 px-4 button"; %>
       </div>
       <div class="col-12 mb-4 d-flex flex-row-reverse">
-        <%= link_to "削除", admin_facility_path, method: :delete, "data-confirm" => "本当に削除しますか？"  %>
+        <%= link_to "削除", admin_facility_path, class: "mx-4 px-4 button", method: :delete, "data-confirm" => "本当に削除しますか？"  %>
       </div>
 
       <div class="row">
