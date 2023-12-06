@@ -8,7 +8,7 @@
       </div>
 
       <% @facilities.each do |facility| %>
-        <%= link_to admin_facility_path(facility) do %>
+        <%= link_to facility_path(facility) do %>
           ◆ <%= facility.name %>
         <% end %>
 

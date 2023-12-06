@@ -30,4 +30,17 @@
 .button {
   color: black;
   background-color: #ffe4b5;
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  font-size: 16px; /* テキストのサイズ */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+.button:hover {
+    background-color: orange; /* ホバー時の背景色変更 */
+    color: white;
 }

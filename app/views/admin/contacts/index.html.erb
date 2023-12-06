@@ -9,7 +9,11 @@
 
       <% @contacts.each do |contact| %>
         <%= link_to admin_contact_path(contact) do %>
-          ◆ <%= contact.group %>   <%= contact.name %>
+          ◆ <% if contact.group %>
+            法人
+          <% elsif %>
+            個人
+          <% end %>   <%= contact.name %>
         <% end %><br>
 
       <% end %>

@@ -4,11 +4,11 @@ class CreateFacilities < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :post_code
       t.string :address
-      t.date :open
-      t.integer :rent
-      t.integer :utility
-      t.integer :food
-      t.integer :daily
+      t.string :open
+      t.string :rent
+      t.string :utility
+      t.string :food
+      t.string :daily
       t.text :explanation
       t.timestamps
     end

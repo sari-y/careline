@@ -5,7 +5,7 @@ class CreateContacts < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :name_kana
       t.boolean :sex
-      t.integer :age
+      t.string :age
       t.string :phone_number
       t.string :email
       t.text :requirements
