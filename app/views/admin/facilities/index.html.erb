@@ -12,7 +12,7 @@
 
       <% @facilities.each do |facility| %>
         <%= link_to admin_facility_path(facility) do %>
-          ◆ <%= facility.name %>
+          <h5> ◆ <%= facility.name %></h5>
         <% end %><br>
       <% end %>
     </div>

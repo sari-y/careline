@@ -1,2 +1,112 @@
-<h1>Public::Facilities#show</h1>
-<p>Find me in app/views/public/facilities/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <h2>施設情報詳細</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>施設名</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.name %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>郵便番号</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.post_code %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>住所</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.address %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>開業日</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.open %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>家賃</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.rent %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>光熱水費</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.utility %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>食材料費</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.food %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>日用品費</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.daily %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="field">
+            <div>施設説明</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <%= @facility.explanation %>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
