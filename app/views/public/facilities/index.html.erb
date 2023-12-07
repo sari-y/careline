@@ -9,9 +9,8 @@
 
       <% @facilities.each do |facility| %>
         <%= link_to facility_path(facility) do %>
-          ◆ <%= facility.name %>
-        <% end %>
-
+          <h5> ◆ <%= facility.name %></h5>
+        <% end %><br>
       <% end %>
     </div>
   </div>
