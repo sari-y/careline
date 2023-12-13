@@ -7,16 +7,11 @@
         </div>
       </div>
 
-      <% @contacts.each do |contact| %>
-        <%= link_to admin_contact_path(contact) do %>
-          <h5>◆ <% if contact.group %>
-            法人
-          <% elsif %>
-            個人
-          <% end %>   　・　<%= contact.name %>
-        <% end %></h5><br>
+    <% @contacts.each do |contact| %>
+      <h5>◆ <%= contact.created_at.strftime('%Y-%m-%d %H:%M:%S') %>　（　<%= contact.group ? '法人' : '個人' %>　）　　　<%= link_to contact.name, admin_contact_path(contact) %></h5>
+    <% end %>
 
-      <% end %>
+
     </div>
   </div>
 </div>
