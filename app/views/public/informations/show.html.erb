@@ -6,11 +6,13 @@
           <h2>会社情報詳細</h2>
         </div>
       </div>
-      <div class="col-12 mb-4 d-flex flex-row-reverse">
-        <%= link_to "編集", edit_admin_information_path(@information), class: "button" %>
-      </div>
-      <div class="col-12 mb-4 d-flex flex-row-reverse">
-        <%= link_to "削除", admin_information_path, class: "button", method: :delete, "data-confirm" => "本当に削除しますか？"  %>
+      <div class="d-flex justify-content-end">
+        <div class="col-2 mb-4">
+          <%= link_to "編集", edit_admin_information_path(@information), class: "button" %>
+        </div>
+        <div class="col-2 mb-4">
+          <%= link_to "削除", admin_information_path, class: "button", method: :delete, "data-confirm" => "本当に削除しますか？"  %>
+        </div>
       </div>
 
       <div class="row">
