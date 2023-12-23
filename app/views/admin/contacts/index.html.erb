@@ -6,12 +6,10 @@
           <h2>お問い合わせ一覧</h2>
         </div>
       </div>
-
-    <% @contacts.each do |contact| %>
-      <h5>◆ <%= contact.created_at.strftime('%Y-%m-%d %H:%M:%S') %>　（　<%= contact.group ? '法人' : '個人' %>　）　　　<%= link_to contact.name, admin_contact_path(contact) %></h5>
-    <% end %>
-
-
+      <% @contacts.each do |contact| %>
+        <h5>◆ <%= contact.created_at.strftime('%Y-%m-%d %H:%M:%S') %>　（　<%= contact.group ? '法人' : '個人' %>　）　　　<%= link_to contact.name, admin_contact_path(contact) %></h5>
+      <% end %>
     </div>
   </div>
 </div>
+<br>
